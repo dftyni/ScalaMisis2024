@@ -8,8 +8,6 @@ class MyTest extends munit.FunSuite:
     val p3 = Point(33.65, 17.31)
     val circle = computeCircle(p1, p2, p3)
 
-    println(circle)
-
     val points = List(p1, p2, p3)
     for(p <- points){
       assertEquals(UpperRound(DistanceBetweenPoints(p, circle.centre)), UpperRound(circle.radius))
